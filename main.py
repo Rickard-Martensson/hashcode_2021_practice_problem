@@ -3,7 +3,6 @@
 INPUT_FILE_NAME = "in"
 OUTPUT_FILE_NAME = "out"
 
-
 """
 Calculates the number of points for the google hashcode preparation problem 2021
 
@@ -41,6 +40,9 @@ def läs_indata():
         fil_2 = open(OUTPUT_FILE_NAME, "r")
         out_rader = fil_2.readlines()
         out_rader.pop(0)
+
+
+läs_indata()
 
 
 använda_pizzor = set()
@@ -97,8 +99,5 @@ def main():
         poäng += len(topping_set) ** 2
 
 
-läs_indata()
-
 main()
-
 print("poäng =", poäng)
