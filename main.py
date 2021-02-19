@@ -1,7 +1,7 @@
 # Author: Rickard Mårtensson <rmarte@kth.se>
 
 INPUT_FILE_NAME = "in"
-OUTPUT_FILE_NAME = "out"
+OUTPUT_FILE_NAME = "out2"
 
 """
 Calculates the number of points for the google hashcode preparation problem 2021
@@ -75,7 +75,9 @@ def main():
         pizza_idx = list(map(int, rad.split()))
         # print(pizza_idx)
         lagstorlek = pizza_idx[0]
-        lag[lagstorlek] -= 1
+        print(lag[3], lagstorlek - 1)
+        print(lag[lagstorlek - 1])
+        lag[lagstorlek - 1] -= 1
         if lag[lagstorlek] < 0:
             Exception(
                 UnicodeError,
