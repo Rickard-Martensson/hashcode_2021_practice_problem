@@ -78,7 +78,7 @@ def main():
         print(lag[3], lagstorlek - 1)
         print(lag[lagstorlek - 1])
         lag[lagstorlek - 1] -= 1
-        if lag[lagstorlek] < 0:
+        if lag[lagstorlek - 1] < 0:
             Exception(
                 UnicodeError,
                 "finns ej tillräckligt med lag av rätt storlek (försökte leverera fler ordrar av storlek {0} än vad det fanns lag av storlek {0})".format(lagstorlek),
